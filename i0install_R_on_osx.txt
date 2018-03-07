@@ -1,2 +1,0 @@
-安装: brew install r
-更新: brew upgrade r

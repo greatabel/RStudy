@@ -1,0 +1,8 @@
+安装: brew install r
+更新: brew upgrade r
+
+命令行中运行R的script: 
+方法1:
+RScript i0hello.R 
+方法2:
+R < i0hello.R --no-save
