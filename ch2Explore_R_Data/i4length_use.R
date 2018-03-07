@@ -8,3 +8,6 @@ print_fun <- function(x) {
 }
 
 print_fun(x)
+
+1 + 2
+"+" (1, 2)
