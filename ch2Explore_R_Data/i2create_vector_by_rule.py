@@ -9,3 +9,8 @@ z2 <- seq(10, 100, length=4)
 z2
 z2 <- seq(10, 100, length=10)
 z2
+
+z3 <- rep(1:5,2)
+'rep(1:5,2)'; z3
+z3 <- rep(1:5, times=2)
+z3
