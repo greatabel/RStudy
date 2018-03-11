@@ -16,3 +16,13 @@ m <- matrix(c(10, 20, 30, 40, 50, 60, 70, 80, 90), nrow=3)
 'm='; m
 'rowSums(m)=';rowSums(m)
 'm/rowSums(m)='; m/rowSums(m)
+
+'100 + m = '; 100 + m
+'100 * m = '; 100 * m
+
+'矩阵乘法'
+a <- matrix(c(1, 2, 3, 4), nrow = 2)
+b <- matrix(c(1, 0, 0, 1), nrow = 2)
+a
+b
+'a %*% b = '; a %*% b
