@@ -12,3 +12,10 @@ m <- rbind(c(1, 2, 3), c(4, 5, 6))
 
 new_m <- m[, c(1,3)]
 'new_m <- m[, c(1,3)]='; new_m
+
+'对行列调用函数 apply(m, dimcode, f, fargs)'
+'dimcode = 1 代表对矩阵每一行应用函数'
+'dimcode = 2 代表矩阵中每一列应用函数'
+
+apply(m, 1 , max)
+apply(m, 2 , max)
