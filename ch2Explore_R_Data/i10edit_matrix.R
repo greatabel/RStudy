@@ -30,6 +30,25 @@ y <- apply(z, 1, f)
 '转秩后：'
 't(y)='; t(y)
 
+m <- matrix(c(99,83, 23, 31,
+    46, 10, 15, 66,
+    31, 45, 66, 15,
+    11, 22, 98, 94), nrow=4)
+'m='; m
+
+outlier_value <- function( matrix_row, method_opt) {
+    if (method_opt == 1)
+     {
+        return (max(matrix_row))
+     }
+    if (method_opt == 0)
+     {
+        return (min(matrix_row))
+     }
+}
+apply(m, 1, outlier_value , 1)
+apply(m, 1, outlier_value , 0)
+
 library(crayon)
 cat(blue$blurred("Hello", "world!\n"))
 cat(red$inverse("Hello", "world!\n"))
