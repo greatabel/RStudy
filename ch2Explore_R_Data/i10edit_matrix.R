@@ -19,3 +19,12 @@ new_m <- m[, c(1,3)]
 
 apply(m, 1 , max)
 apply(m, 2 , max)
+
+library(crayon)
+cat(blue$blurred("Hello", "world!\n"))
+cat(red$inverse("Hello", "world!\n"))
+cat(green(
+  'I am a green line ' %+%
+  blue$underline$bold('with a blue substring') %+%
+  ' that becomes green again!\n'
+))
