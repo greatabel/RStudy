@@ -20,6 +20,16 @@ new_m <- m[, c(1,3)]
 apply(m, 1 , max)
 apply(m, 2 , max)
 
+z <- matrix(c(20, 40, 90, 80, 60, 10), nrow = 3)
+'z='; z
+
+f <- function(x) { x / sum(x)}
+
+y <- apply(z, 1, f)
+'y='; y
+'转秩后：'
+'t(y)='; t(y)
+
 library(crayon)
 cat(blue$blurred("Hello", "world!\n"))
 cat(red$inverse("Hello", "world!\n"))
@@ -28,3 +38,4 @@ cat(green(
   blue$underline$bold('with a blue substring') %+%
   ' that becomes green again!\n'
 ))
+
