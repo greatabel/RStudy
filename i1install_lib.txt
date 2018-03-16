@@ -9,3 +9,5 @@ devtools::install_github("r-lib/crayon")
 install.packages("jpeg")
 
 查看R版本： R --version
+
+install.packages("plotrix")
