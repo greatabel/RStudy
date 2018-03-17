@@ -1,8 +1,6 @@
 attach(mtcars)
 
 
-
-
 hist(mpg, breaks = 15, xlim=c(10, 35),
     xlab = 'miles/gallon', main = 'colored histogram example (breaks=15)')
 hist(mpg, breaks = 10, xlim=c(10, 35),
