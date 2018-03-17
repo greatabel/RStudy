@@ -7,3 +7,10 @@ rownames(my.data) <- c("China", "Germany")
 colnames(my.data) <- c("primary", "second", "tertiary")
 
 my.data
+
+barplot(my.data, main = "Grouped barplot",
+        xlab = "Industires", ylab = "Employment(%)",
+        col = c("wheat", "orange"),
+        legend = rownames(my.data), 
+        args.legend = list(x = "top")
+       )
