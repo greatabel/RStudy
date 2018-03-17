@@ -4,3 +4,9 @@ barplot(my.data, ylim = c(0, round(max(my.data))),
         main = 'barplot example',
         xlab = "Countries",
         ylab = "GDP per energy")
+
+barplot(my.data, ylim = c(0, round(max(my.data))),
+        horiz = TRUE,
+        main = 'barplot example',
+        xlab = "Countries",
+        ylab = "GDP per energy")
