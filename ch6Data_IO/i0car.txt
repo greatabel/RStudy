@@ -1,3 +1,4 @@
 Make, lp100km, mass.kg, List.price
 alpha0, 9.5, 1242, 38500
 alpha1, 8.5, 1243, 38501
+alpha2, 8.6, 1244, 38502
