@@ -10,3 +10,11 @@ myopia
 cat(red$bold("'---------'\n"))
 sub <- myopia[2:3, 1:2]
 sub
+
+cat(blue$bold("class(sub"))
+class(sub)
+
+sub1 <- myopia[2:3, 2]
+sub1
+cat(green$bold("class(sub1"))
+class(sub1)
