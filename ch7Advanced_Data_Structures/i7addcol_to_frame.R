@@ -14,5 +14,15 @@ rbind(students, list('sariah', 15))
 cat(green$bold("cbind\n"))
 cbind(students, gender=c("M","F"))
 
+students
+cat(red$bold("students$gender <- c('m', 'f')\n"))
+students$gender <- c("M", "F")
+students
+
+cat(green$bold("students$gender <- NULL\n"))
+students$gender <- NULL
+
+students
+
 
 
