@@ -14,3 +14,8 @@ students2
 
 students3 <- merge(students, students2)
 students3
+
+na = c("jack", "steven")
+students4 <- data.frame(na, ages, stringsAsFactors=F)
+students5 <- merge(students2, students4, by.x='names', by.y='na')
+students5
