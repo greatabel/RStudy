@@ -18,3 +18,9 @@ head(my.km$cluster)
 
 plot(countries, col = my.km$cluster)
 points(my.km$centers, col=1:2, pch =8, cex=2)
+
+cat(blue$bold("-----Mclust------"))
+library(mclust)
+
+my.em <- Mclust(countries)
+summary(my.em)
