@@ -8,3 +8,11 @@ students <- data.frame(names, ages, stringsAsFactors=F)
 
 students
 
+cat(red$bold("rbind\n"))
+rbind(students, list('sariah', 15))
+
+cat(green$bold("cbind\n"))
+cbind(students, gender=c("M","F"))
+
+
+
