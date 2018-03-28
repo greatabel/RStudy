@@ -16,3 +16,5 @@ install.packages("mclust")
 install.packages("nnet")
 install.packages("quantmod")
 install.packages('caret', dependencies = TRUE)
+
+install.packages("alr3")
