@@ -19,3 +19,7 @@ install.packages('caret', dependencies = TRUE)
 
 install.packages("alr3")
 install.packages("corrplot")
+install.packages("leaps")
+install.packages("MPV")
+install.packages("ISLR")
+install.packages("MASS")
