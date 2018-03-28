@@ -17,3 +17,4 @@ head(snake)
 
 plot(content, yield, xlab = 'water content of snow',
     ylab = 'water yield')
+
