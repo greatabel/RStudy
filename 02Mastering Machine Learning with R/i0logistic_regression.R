@@ -33,3 +33,16 @@ bc <- cor(biopsy.v2[, 1:9])
 # 'bc'; bc
 corrplot.mixed(bc)
 
+cat(blue$bold$bgMagenta("划分训练和测试"), '\n')
+set.seed(100) #random number generator
+ind <- sample(2, nrow(biopsy.v2), replace = TRUE, prob=c(0.7, 0.3))
+train <- biopsy.v2[ind==1, ] #the training data set
+test <- biopsy.v2[ind==2, ] #the test data set
+
+str(test) #confirm it worked
+cat(blue$bold$bgMagenta("===="), '\n')
+str(train)
+cat(blue$bold$bgMagenta("确保两个数据集的结果变量是均衡的，我们做以下检查"), '\n')
+
+table(train$class)
+table(test$class)
