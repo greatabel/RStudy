@@ -46,3 +46,14 @@ cat(blue$bold$bgMagenta("确保两个数据集的结果变量是均衡的，我�
 
 table(train$class)
 table(test$class)
+
+full.fit <- glm(class ~ . , family = binomial, data = train)
+summary(full.fit)
+cat(blue$bold$bgMagenta("confint(full.fit)"), '\n')
+confint(full.fit)
+cat(blue$bold$bgRed("exp(coef(full.fit))"), '\n')
+exp(coef(full.fit))
+
+library(car)
+cat(blue$bold$bgCyan("vif(full.fit)"), '\n')
+vif(full.fit)
