@@ -1,5 +1,5 @@
-install.packages("ggplot2")
-install.packages("devtools")
+install.packages(c("ggplot2", "devtools"))
+
 
 
 https://github.com/r-lib/crayon
@@ -26,5 +26,8 @@ install.packages("MASS")
 install.packages("reshape2")
 install.packages("InformationValue")
 install.packages("bestglm")
-install.packages("ROCR", repos='https://mirrors.ustc.edu.cn/CRAN/')
-install.packages("gplots", repos='https://mirrors.ustc.edu.cn/CRAN/')
+install.packages(c("ROCR", "gplots" ), 
+repos='https://mirrors.ustc.edu.cn/CRAN/')
+
+install.packages(c("ElemStatLearn", "car", "leaps", "glmnet"), 
+repos='https://mirrors.ustc.edu.cn/CRAN/')
