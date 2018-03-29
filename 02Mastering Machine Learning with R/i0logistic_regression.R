@@ -57,3 +57,23 @@ exp(coef(full.fit))
 library(car)
 cat(blue$bold$bgCyan("vif(full.fit)"), '\n')
 vif(full.fit)
+
+train.probs <- predict(full.fit, type = "response")
+'train.probs[1:5] '; train.probs[1:5] #inspect the first 5 predicted probabilities
+'contrasts(train$class)'; contrasts(train$class)
+
+cat(blue$bold$bgMagenta("===="), '\n')
+library(InformationValue)
+trainY <- y[ind==1]
+testY <- y[ind==2]
+confusionMatrix(trainY, train.probs)
+# optimalCutoff(trainY, train.probs)
+cat(blue$bold$bgMagenta("misClassError(trainY, train.probs):"))
+misClassError(trainY, train.probs)
+confusionMatrix(trainY, train.probs)
+
+
+test.probs <- predict(full.fit, newdata = test, type = "response")
+cat(blue$bold$bgGreen("misClassError(testY, test.probs):"))
+misClassError(testY, test.probs)
+confusionMatrix(testY, test.probs)
