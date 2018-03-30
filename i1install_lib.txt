@@ -29,5 +29,6 @@ install.packages("bestglm")
 install.packages(c("ROCR", "gplots" ), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
 
-install.packages(c("ElemStatLearn", "car", "leaps", "glmnet"), 
+install.packages(c("ElemStatLearn", "car", "leaps", "glmnet", "kknn",
+"e1071", "kernlab", "pROC"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
