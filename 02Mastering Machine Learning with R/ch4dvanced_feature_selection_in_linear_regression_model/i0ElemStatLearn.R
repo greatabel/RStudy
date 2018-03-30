@@ -18,3 +18,7 @@ table(prostate$gleason)
 
 boxplot(prostate$lpsa ~ prostate$gleason, xlab = "Gleason Score", 
         ylab = "Log of PSA")
+
+prostate$gleason <- ifelse(prostate$gleason == 6, 0, 1)
+cat(red$bold$bgGreen("table(prostate$gleason):"))
+table(prostate$gleason)
