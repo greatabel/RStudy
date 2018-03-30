@@ -4,7 +4,17 @@ library(corrplot) #correlation plots
 library(leaps) #best subsets regression
 library(glmnet) #allows ridge regression, LASSO and elastic net
 library(caret) #this will help identify the appropriate parameters
+library(crayon)
 
 data(prostate)
+
 str(prostate)
 plot(prostate)
+
+plot(prostate$gleason, ylab = "Gleason Score")
+
+cat(blue$bold$bgGreen("table(prostate$gleason):"))
+table(prostate$gleason)
+
+boxplot(prostate$lpsa ~ prostate$gleason, xlab = "Gleason Score", 
+        ylab = "Log of PSA")
