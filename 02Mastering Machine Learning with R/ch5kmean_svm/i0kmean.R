@@ -24,3 +24,7 @@ str(Pima.tr)
 cat(red$bold$bgCyan("=============="),"\n")
 data(Pima.te)
 str(Pima.te)
+
+cat(red$bold$bgCyan("合并 Pima.tr Pima.te"), "\n")
+pima <- rbind(Pima.tr, Pima.te)
+str(pima)
