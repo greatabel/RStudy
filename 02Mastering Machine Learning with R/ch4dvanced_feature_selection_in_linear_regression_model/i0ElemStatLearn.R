@@ -22,3 +22,7 @@ boxplot(prostate$lpsa ~ prostate$gleason, xlab = "Gleason Score",
 prostate$gleason <- ifelse(prostate$gleason == 6, 0, 1)
 cat(red$bold$bgGreen("table(prostate$gleason):"))
 table(prostate$gleason)
+
+cat(red$bold$bgCyan("相关性统计图:"))
+p.cor = cor(prostate)
+corrplot.mixed(p.cor)
