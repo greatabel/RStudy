@@ -6,3 +6,7 @@ library(randomForest) #random forests
 library(xgboost) #gradient boosting 
 library(caret) #tune hyper-parameters
 
+data(prostate)
+prostate$gleason <- ifelse(prostate$gleason == 6, 0, 1)
+pros.train <- subset(prostate, train == TRUE)[, 1:9]
+pros.test = subset(prostate, train == FALSE)[, 1:9]
