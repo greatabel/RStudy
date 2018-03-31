@@ -28,3 +28,7 @@ str(Pima.te)
 cat(red$bold$bgCyan("合并 Pima.tr Pima.te"), "\n")
 pima <- rbind(Pima.tr, Pima.te)
 str(pima)
+
+pima.melt <- melt(pima, id.var = "type")
+ggplot(data = pima.melt, aes(x = type, y = value)) +
+  geom_boxplot() + facet_wrap(~ variable, ncol = 2)
