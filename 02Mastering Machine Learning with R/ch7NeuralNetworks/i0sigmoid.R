@@ -14,4 +14,4 @@ z <- data.frame(cbind(x, s, t))
 ggplot(z, aes(x)) + 
   geom_line(aes(y = s, color = "sigmoid")) + 
   geom_line(aes(y = t, color = "tanh")) +
-  labs(x = "Input",y = "Output") 
+  labs(x = "Input",y = "Output")

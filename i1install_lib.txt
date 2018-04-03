@@ -31,5 +31,5 @@ repos='https://mirrors.ustc.edu.cn/CRAN/')
 
 install.packages(c("ElemStatLearn", "car", "leaps", "glmnet", "kknn",
 "e1071", "kernlab", "pROC", "rpart", "partykit", "randomForest",
-"xgboost", "Boruta"), 
+"xgboost", "Boruta", "neuralnet"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
