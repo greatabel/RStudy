@@ -12,3 +12,14 @@ str(shuttle)
 cat(blue$bold$bgCyan("table(shuttle$use)="))
 table(shuttle$use)
 
+
+table1 <- structable(wind + magn ~ use, shuttle)
+table1
+
+
+mosaic(table1, shade = T)
+mosaic(use ~ error + vis, shuttle)
+table(shuttle$use, shuttle$stability)
+prop.table(table(shuttle$use, shuttle$stability))
+chisq.test(shuttle$use, shuttle$stability)
+
