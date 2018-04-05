@@ -35,3 +35,10 @@ head(shuttle.2)
 cat(blue$bold$bgCyan("======="), "\n")
 shuttle.2$use <- ifelse(shuttle$use == "auto", 1, 0)
 table(shuttle.2$use)
+
+set.seed(123)
+trainIndex <- createDataPartition(shuttle.2$use, p = .7,
+                                  list = F)
+# head(trainIndex)
+shuttleTrain <- shuttle.2[ trainIndex, ]
+shuttleTest  <- shuttle.2[-trainIndex, ]
