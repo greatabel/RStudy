@@ -23,3 +23,15 @@ table(shuttle$use, shuttle$stability)
 prop.table(table(shuttle$use, shuttle$stability))
 chisq.test(shuttle$use, shuttle$stability)
 
+cat(blue$bold$bgCyan("神经网络的数据准备是非常重要的，因为所有协变量和响应变量都必须是数值型"))
+dummies <- dummyVars(use ~. ,shuttle, fullRank = T)
+dummies
+
+cat(blue$bold$bgCyan("======="), "\n")
+shuttle.2 <- data.frame(predict(dummies, newdata = shuttle))
+names(shuttle.2)
+head(shuttle.2)
+
+cat(blue$bold$bgCyan("======="), "\n")
+shuttle.2$use <- ifelse(shuttle$use == "auto", 1, 0)
+table(shuttle.2$use)
