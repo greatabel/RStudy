@@ -42,3 +42,35 @@ trainIndex <- createDataPartition(shuttle.2$use, p = .7,
 # head(trainIndex)
 shuttleTrain <- shuttle.2[ trainIndex, ]
 shuttleTest  <- shuttle.2[-trainIndex, ]
+
+n <- names(shuttleTrain)
+form <- as.formula(paste("use ~", paste(n[!n %in% "use"], collapse = " + ")))
+form
+
+set.seed(1)
+fit <- neuralnet(form, data = shuttleTrain, hidden = c(2, 1), err.fct = "ce", 
+                 linear.output = F)
+fit$result.matrix
+
+head(fit$generalized.weights[[1]])
+plot(fit)
+
+par(mfrow=c(1,2))
+gwplot(fit, selected.covariate = "vis.yes")
+gwplot(fit, selected.covariate = "wind.tail")
+
+resultsTrain <- compute(fit, shuttleTrain[, 1:10])
+
+predTrain <- resultsTrain$net.result
+predTrain <- ifelse(predTrain >= 0.5, 1, 0)
+table(predTrain, shuttleTrain$use)
+
+resultsTest <- compute(fit, shuttleTest[,1:10])
+predTest <- resultsTest$net.result
+predTest <- ifelse(predTest >= 0.5, 1, 0)
+table(predTest, shuttleTest$use)
+
+cat(red$bold$bgCyan("======="), "\n")
+which(predTest == 1 & shuttleTest$use == 0)
+shuttleTest[62,]
+
