@@ -34,4 +34,6 @@ install.packages(c("ElemStatLearn", "car", "leaps", "glmnet", "kknn",
 "xgboost", "Boruta", "neuralnet", "h2o"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
 
-
+install.packages(c("cluster", "compareGroups", "HDclassif", "NbClust",
+"sparcl"), 
+repos='https://mirrors.ustc.edu.cn/CRAN/')
