@@ -25,3 +25,17 @@ numComplete$Best.nc
 dis <- dist(df, method = "euclidean")
 hc <- hclust(dis, method = "complete")
 plot(hc, hang = -1,labels = FALSE, main = "Complete-Linkage")
+
+comp3 <- cutree(hc, 3)
+ColorDendrogram(hc, y = comp3, main = "Complete", branchlength = 50)
+table(comp3)
+table(comp3, wine$Class)
+
+numWard <- NbClust(df, diss = NULL, distance = "euclidean", 
+        min.nc = 2, 
+        max.nc = 6, 
+        method= "ward.D2", 
+        index = "all")
+
+hcWard <- hclust(dis, method = "ward.D2")
+plot(hcWard, hang = -1, labels = FALSE, main = "Ward's-Linkage")
