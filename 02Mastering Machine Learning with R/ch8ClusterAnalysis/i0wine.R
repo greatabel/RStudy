@@ -6,3 +6,8 @@ library(sparcl) #colored dendrogram
 
 data(wine)
 str(wine)
+
+names(wine) <- c("Class", "Alcohol", "MalicAcid", "Ash", "Alk_ash",
+                 "magnesium", "T_phenols", "Flavanoids", "Non_flav",
+                 "Proantho", "C_Intensity", "Hue", "OD280_315", "Proline")
+names(wine)
