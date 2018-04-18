@@ -35,5 +35,5 @@ install.packages(c("ElemStatLearn", "car", "leaps", "glmnet", "kknn",
 "HDclassif", "NbClust","sparcl", "psych", "arules", "arulesViz", "Groceries"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
 
-install.packages(c("recommenderlab", "TraMineR", "dplyr"), 
+install.packages(c("recommenderlab", "TraMineR", "dplyr", "caretEnsemble", "caTools"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
