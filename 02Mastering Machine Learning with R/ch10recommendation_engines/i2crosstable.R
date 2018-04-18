@@ -11,9 +11,9 @@ rules <- apriori(Groceries,
 cat(blue$bold$bgGreen("rules:"), '\n')
 rules
 
-rules <- sort(rules, by = "lift", decreasing = TRUE)
-inspect(rules[1:5])
-cat(red$bold$bgGreen("======="), '\n')
-rules <- sort(rules, by = "confidence", decreasing = TRUE)
-inspect(rules[1:5])
 
+'建立一个交叉表,表格建立之后，检查商品之间的共同购买关系。先看看表格的前3行和前3列'
+tab <- crossTable(Groceries)
+tab[1:3, 1:3]
+tab["bottled beer", "bottled beer"]
+tab["bottled beer", "canned beer"]
