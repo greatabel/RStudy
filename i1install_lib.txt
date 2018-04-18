@@ -38,3 +38,7 @@ repos='https://mirrors.ustc.edu.cn/CRAN/')
 install.packages(c("recommenderlab", "TraMineR", "dplyr", "caretEnsemble", "caTools",
 "ggfortify", "forecast", "tseries"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
+
+
+install.packages(c("vars", "aod"), 
+repos='https://mirrors.ustc.edu.cn/CRAN/')
