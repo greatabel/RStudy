@@ -31,9 +31,9 @@ repos='https://mirrors.ustc.edu.cn/CRAN/')
 
 install.packages(c("ElemStatLearn", "car", "leaps", "glmnet", "kknn",
 "e1071", "kernlab", "pROC", "rpart", "partykit", "randomForest",
-"xgboost", "Boruta", "neuralnet", "h2o"), 
+"xgboost", "Boruta", "neuralnet", "h2o","cluster", "compareGroups", 
+"HDclassif", "NbClust","sparcl", "psych", "arules", "arulesViz", "Groceries"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
 
-install.packages(c("cluster", "compareGroups", "HDclassif", "NbClust",
-"sparcl", "psych", "arules", "arulesViz", "Groceries"), 
+install.packages(c("recommenderlab", "TraMineR", "dplyr"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
