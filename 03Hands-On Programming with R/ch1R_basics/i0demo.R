@@ -7,6 +7,9 @@ cat(blue$bold$bgMagenta("1 + 1"), '\n')
 cat(blue$bold$bgMagenta("100:130"), '\n')
 100:130
 
+die <- 1: 6
+'die='; die
+ 
 a <- 1
 'a='; a
 'a + 2 ='; a + 2
