@@ -8,3 +8,12 @@ dice <- sample(die , size = 2, replace = TRUE)
 dice
 sum(dice)
 
+print('----------')
+roll <- function() {
+    die <- 1: 6
+    dice <- sample(die, size = 2, replace = TRUE)
+    print(dice)
+    sum(dice)
+}
+
+roll()
