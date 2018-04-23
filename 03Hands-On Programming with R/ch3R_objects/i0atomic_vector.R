@@ -8,3 +8,9 @@ typeof(int)
 
 text <- c('ace', 'hearts')
 typeof(text)
+
+comp <- c( 1 + 1i, 1 + 2i, 1 + 3i)
+typeof(comp)
+
+raw(3)
+typeof(raw(3))
