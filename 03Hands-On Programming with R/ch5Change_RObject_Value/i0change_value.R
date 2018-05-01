@@ -25,3 +25,12 @@ cat(red$bold$bgGreen("或者"), '\n')
 deck2$value[c(13, 26, 39, 52)] <- 14
 
 head(deck2, 13)
+
+shuffle <- function(cards) {
+    random <- sample(1:52, size = 52)
+    cards[random, ]
+
+}
+
+cat(red$bold$bgGreen("----------"), '\n')
+print(shuffle(deck2))
