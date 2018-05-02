@@ -13,3 +13,6 @@ parent.env(globalenv())
 
 cat(red$bold$bgGreen("ls(emptyenv())"), '\n')
 ls(emptyenv())
+
+assign('new', 'Hello global', envir = globalenv())
+globalenv()$new
