@@ -1,5 +1,6 @@
 library(crayon)
 library(pryr)
+# https://stackoverflow.com/questions/27541539/r-could-not-find-function-parenvs
 
 cat(red$bold$bgGreen("R活动环境 任何时候只有一个"), '\n')
 environment()
