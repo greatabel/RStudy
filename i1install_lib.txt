@@ -36,9 +36,9 @@ install.packages(c("ElemStatLearn", "car", "leaps", "glmnet", "kknn",
 repos='https://mirrors.ustc.edu.cn/CRAN/')
 
 install.packages(c("recommenderlab", "TraMineR", "dplyr", "caretEnsemble", "caTools",
-"ggfortify", "forecast", "tseries", "vars", "aod"), 
+"ggfortify", "forecast", "tseries", "vars", "aod", "tm", "wordcloud", "RColorBrewer"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
 
 
-install.packages(c("tm", "wordcloud", "RColorBrewer"), 
+install.packages(c("pryr"), 
 repos='https://mirrors.ustc.edu.cn/CRAN/')
