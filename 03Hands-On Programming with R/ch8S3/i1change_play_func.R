@@ -43,9 +43,10 @@ score <- function(symbols){
 
 play <- function() {
     symbols <- get_symbols()
-    prize <- score(symbols)
-    attr(prize, 'symbols') <- symbols
-    prize
+    # prize <- score(symbols)
+    # attr(prize, 'symbols') <- symbols
+    # prize
+    structure(score(symbols), symbols = symbols)
 }
 
 
