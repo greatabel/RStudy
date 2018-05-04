@@ -1,8 +1,8 @@
 source("i1change_play_func.R")
 
-play()
-play()
-play()
+# play()
+# play()
+# play()
 
 slot_display <- function(prize){
 
@@ -12,9 +12,10 @@ slot_display <- function(prize){
     #将所有符号压缩为一个字符串
     symbols <- paste(symbols, collapse = " ")
 
-    string <- paste(symbols, prize, sep = "\n$")
+    string <- paste(symbols, prize, '###', sep = "\n$")
 
     cat(string)
 }
+
 one_play = play()
 slot_display(one_play)
