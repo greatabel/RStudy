@@ -20,12 +20,18 @@ combos$prob <- combos$prob1 * combos$prob2 * combos$prob3
 sum(combos$prob)
 
 combos$prize <- NA
+combos$new_prize <- NA
 source("../ch7Program/i4score_func.R")
+source("i2score_with_diamonds_effect.R")
+
 for(i in 1:nrow(combos)) {
     symbols <- c(combos[i, 1], combos[i, 2], combos[i, 3])
     combos$prize[i] <- score(symbols)
+    combos$new_prize[i] <- new_score(symbols)
 }
 
 head(combos, 10)
 cat(red$bold$bgGreen("计算期望值，也就是老虎机的返还率"), '\n')
 sum(combos$prize * combos$prob)
+cat(red$bold$bgGreen("考虑diamonds百搭之后的返还率"), '\n')
+sum(combos$new_prize * combos$prob)
