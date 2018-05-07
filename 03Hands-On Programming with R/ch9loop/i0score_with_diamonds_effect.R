@@ -58,8 +58,8 @@ play <- function() {
 }
 
 
-play()
-cat(red$bold$bgGreen("play again!"), '\n')
-play()
-cat(red$bold$bgGreen("play again!"), '\n')
-play()
+# play()
+# cat(red$bold$bgGreen("play again!"), '\n')
+# play()
+# cat(red$bold$bgGreen("play again!"), '\n')
+# play()
