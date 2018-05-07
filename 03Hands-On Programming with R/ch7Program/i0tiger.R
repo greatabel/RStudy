@@ -10,4 +10,4 @@ get_symbols <- function() {
         prob = c(0.03, 0.03, 0.06, 0.1, 0.25, 0.01, 0.52))
 }
 
-get_symbols()
+# get_symbols()
