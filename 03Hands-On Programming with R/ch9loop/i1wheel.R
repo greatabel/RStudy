@@ -22,7 +22,7 @@ sum(combos$prob)
 combos$prize <- NA
 combos$new_prize <- NA
 source("../ch7Program/i4score_func.R")
-source("i2score_with_diamonds_effect.R")
+source("i0score_with_diamonds_effect.R")
 
 for(i in 1:nrow(combos)) {
     symbols <- c(combos[i, 1], combos[i, 2], combos[i, 3])
