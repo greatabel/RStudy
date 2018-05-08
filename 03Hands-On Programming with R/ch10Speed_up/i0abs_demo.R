@@ -20,3 +20,8 @@ abs_set <- function(vec) {
     vec
 }
 abs_set(a)
+
+long <- rep(c(-1, 1), 50000000)
+system.time(abs_loop(long))
+cat(red$bold$bgGreen("向量化版本"), '\n')
+system.time(abs_set(long))
