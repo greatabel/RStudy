@@ -53,9 +53,10 @@ new_score <- function(symbols){
 
 play <- function() {
     symbols <- get_symbols()
-    print(symbols)
+    # print(symbols)
     new_score(symbols)
 }
+
 
 
 # play()
