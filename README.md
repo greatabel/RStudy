@@ -7,4 +7,7 @@ https://book.douban.com/subject/26820855/
 # [02Mastering Machine Learning with R] Folder:
 精通机器学习--基于R（Mastering machine learning with R) 
 https://book.douban.com/subject/30171193/
-
+<hr>
+# [03Hands-On Programming with R] Folder:
+R语言入门与实践（Hands-On Programming with R) 
+https://book.douban.com/subject/26808217/
