@@ -39,4 +39,9 @@ change_vec <- function(vec) {
 }
 system.time(change_vec(many))
 
-
+change_vec2 <- function(vec) {
+    tb <- c('DD' = 'joker', 'C' = 'ace', '7' = 'king',
+            'B' = 'queen', 'BB' = 'jack', '0' = 'nine')
+    unname(tb[vec])
+}
+system.time(change_vec2(many))
