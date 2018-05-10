@@ -21,3 +21,22 @@ change_symbols <- function(vec) {
 
 vec <- c('DD', 'C', '7', 'B', 'BB', 'BBB', '0')
 change_symbols(vec)
+
+many <- rep(vec, 1000000)
+
+system.time(change_symbols(many))
+
+change_vec <- function(vec) {
+    vec[vec == 'DD'] <- 'joker'
+    vec[vec == 'C'] <- 'ace'
+    vec[vec == '7'] <- 'king'
+    vec[vec == 'B'] <- 'queen'
+    vec[vec == 'BB'] <- 'jack'
+    vec[vec == 'BBB'] <- 'ten'
+    vec[vec == '0'] <- 'nine'
+
+    vec
+}
+system.time(change_vec(many))
+
+
