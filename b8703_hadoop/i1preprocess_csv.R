@@ -23,6 +23,8 @@ shuf -n 16999  yellow_tripdata_2020-05.csv > sample_yellow_tripdata_2020-05.csv
 shuf -n 27417  yellow_tripdata_2020-06.csv > sample_yellow_tripdata_2020-06.csv
 
 
+just test 2013 data whether different from 2020
+shuf -n 2000  yellow_tripdata_2013-01.csv > sample_yellow_tripdata_2013-01.csv
 '''
 
 
