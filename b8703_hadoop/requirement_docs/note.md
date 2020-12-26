@@ -15,3 +15,5 @@ http://htmlpreview.github.io/?https://github.com/andrie/RHadoop-tutorial/blob/ma
 http://www.hashdata.cn/blog/12yi-tiao-chu-xing-ji-lu-bei-hou-de-niu-yue-gu-shi/
 
 http://www.hashdata.cn/blog/12yi-tiao-chu-xing-ji-lu-bei-hou-de-niu-yue-gu-shi/
+
+https://zhuanlan.zhihu.com/p/133302116

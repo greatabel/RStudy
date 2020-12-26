@@ -40,9 +40,9 @@ files
 
 # payment_type를 key로 fare_amount를 value로 반환
 map.fun <- function(k, v){
-  # v[,4]: payment_type
-  # v[,6]: fare_amount 
-  keyval(v[,11], v[,12])  
+#v[,4] is Passenger_count
+# 1 mean
+  keyval(v[,4], 1)  
 }
 
 # payment_type을 key로 fare_amount의 합을 value로 반환
