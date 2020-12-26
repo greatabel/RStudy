@@ -18,6 +18,7 @@ mutate(pickup_datetime = ymd_hms(pickup_datetime),
         vendor_id = factor(vendor_id),
         distance = factor(distance))
 
+
 # table‘s sumamary data is coming from rhdfs's result
 # I just copy and past into the read.table()
 # it's temp solution
@@ -38,6 +39,7 @@ data <- read.table(text = "Month             Averge_Pick_in_24            Fiscal
 
 data$MonthN <- as.numeric(format(as.Date(data$Month),"%m")) # Month's number
 data$Month  <- months(as.Date(data$Month), abbreviate=TRUE) # Month's abbr.
+
 
 g <- ggplot(data = data, aes(x = MonthN, y = Averge_Pick_in_24, 
   group = Fiscal.Year, 

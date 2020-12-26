@@ -43,6 +43,7 @@ train <- train %>%
 # geom_histogram(position="dodge")  
 p4 <- train%>%
  ggplot(aes(year,fill=passenger_count,alpha = 1/10))+
-geom_histogram(position="dodge") 
+ ylab("passenger_count(%)") +
+geom_histogram(position="dodge", bins=5) 
 
 print(p4)
