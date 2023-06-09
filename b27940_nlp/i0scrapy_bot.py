@@ -37,13 +37,13 @@ if not os.path.exists('docs'):
 file_names = ['book_1.txt', 'book_2.txt', 'book_3.txt']
 
 # 每份文件的长度
-length = 500
+length = 2500
 
 # 每个原始文件生成的文件数量
-num_files = 7
+num_files = 6
 
 for file_name in file_names:
-    with open(file_name, 'r', encoding='utf-8') as file:
+    with open('original_books/'+file_name, 'r', encoding='utf-8') as file:
         text = file.read()
 
     # 获取前2500字的内容
